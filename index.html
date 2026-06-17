@@ -1,0 +1,905 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>水宅研居星澄店｜小編文案包</title>
+  <meta name="description" content="水宅研居星澄店小編文案包：貼文、短影音、限動、留言回覆與廣告文案。">
+  <style>
+    :root {
+      --ink: #182026;
+      --muted: #66717a;
+      --line: #d8dee3;
+      --paper: #f6f7f5;
+      --surface: #ffffff;
+      --teal: #0f6f7b;
+      --teal-dark: #0a4e57;
+      --coral: #c94f43;
+      --gold: #c79a40;
+      --charcoal: #20262b;
+      --blue: #2d5c88;
+      --shadow: 0 18px 40px rgba(24, 32, 38, .10);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", Arial, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.65;
+      letter-spacing: 0;
+    }
+
+    a { color: inherit; }
+    img { display: block; max-width: 100%; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(246, 247, 245, .94);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(10px);
+    }
+
+    .nav {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      min-height: 64px;
+    }
+
+    .brand {
+      font-weight: 800;
+      color: var(--teal-dark);
+      white-space: nowrap;
+    }
+
+    .navlinks {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .navlinks a {
+      text-decoration: none;
+      padding: 8px 10px;
+      border-radius: 6px;
+      color: var(--muted);
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    .navlinks a:hover { background: #e9efed; color: var(--ink); }
+
+    .hero {
+      background: var(--surface);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-inner {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 42px 0 36px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.02fr) minmax(360px, .98fr);
+      gap: 34px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border: 1px solid #b9d5d8;
+      border-radius: 6px;
+      color: var(--teal-dark);
+      font-weight: 700;
+      font-size: 14px;
+      background: #eef7f6;
+    }
+
+    h1 {
+      margin: 18px 0 12px;
+      font-size: clamp(36px, 5vw, 68px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 710px;
+      color: #344047;
+      font-size: 19px;
+      margin: 0 0 24px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 24px 0 0;
+    }
+
+    .button {
+      border: 0;
+      border-radius: 7px;
+      padding: 11px 15px;
+      font-weight: 800;
+      font-size: 15px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--teal);
+      color: #fff;
+      min-height: 44px;
+    }
+
+    .button.secondary { background: var(--charcoal); }
+    .button.light { background: #e7ecef; color: var(--ink); }
+
+    .hero-media {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--line);
+      background: #111;
+    }
+
+    .hero-media img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+
+    .main {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 34px 0 70px;
+    }
+
+    section {
+      padding: 36px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    section:last-child { border-bottom: 0; }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(220px, 340px) minmax(0, 1fr);
+      gap: 28px;
+      align-items: start;
+      margin-bottom: 22px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(28px, 3vw, 42px);
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+
+    .section-head p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+    .block {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      box-shadow: 0 8px 20px rgba(24, 32, 38, .05);
+    }
+
+    .block h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      line-height: 1.3;
+      letter-spacing: 0;
+    }
+
+    .block p,
+    .block li {
+      color: #3a464e;
+      font-size: 15px;
+    }
+
+    .block ul { padding-left: 1.1em; margin: 10px 0 0; }
+
+    .tag {
+      display: inline-flex;
+      width: fit-content;
+      padding: 4px 8px;
+      border-radius: 5px;
+      background: #edf0f2;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .tag.teal { background: #e1f1f1; color: var(--teal-dark); }
+    .tag.coral { background: #fae9e6; color: #94372d; }
+    .tag.gold { background: #f4ead5; color: #76551b; }
+    .tag.blue { background: #e5eef6; color: #214f79; }
+
+    .visual-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .visual {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .visual img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+
+    .visual strong {
+      display: block;
+      padding: 10px 12px 0;
+      font-size: 15px;
+    }
+
+    .visual span {
+      display: block;
+      padding: 2px 12px 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .copy {
+      position: relative;
+      display: grid;
+      gap: 12px;
+      align-content: start;
+      min-height: 100%;
+    }
+
+    .copy pre {
+      margin: 0;
+      white-space: pre-wrap;
+      font-family: inherit;
+      color: #2d373d;
+      font-size: 15px;
+      line-height: 1.72;
+    }
+
+    .copy button {
+      justify-self: start;
+      border: 1px solid #bad3d5;
+      background: #eef8f7;
+      color: var(--teal-dark);
+      border-radius: 6px;
+      padding: 7px 10px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .copy button.copied {
+      background: var(--teal);
+      color: #fff;
+      border-color: var(--teal);
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 760px;
+      font-size: 15px;
+    }
+
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 13px 14px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th {
+      background: #e9efed;
+      color: var(--teal-dark);
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+
+    .warning {
+      border-left: 5px solid var(--coral);
+      background: #fff7f5;
+    }
+
+    .ok {
+      border-left: 5px solid var(--teal);
+      background: #f3fbfa;
+    }
+
+    .footer {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 24px 0 48px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 920px) {
+      .hero-inner,
+      .section-head,
+      .grid,
+      .grid.two,
+      .grid.four,
+      .visual-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-inner { padding-top: 28px; }
+      .nav { align-items: flex-start; flex-direction: column; padding: 12px 0; }
+      .navlinks { width: 100%; }
+      h1 { font-size: 42px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav" aria-label="頁面導覽">
+      <div class="brand">水宅研居星澄店</div>
+      <div class="navlinks">
+        <a href="#position">定位</a>
+        <a href="#posts">貼文</a>
+        <a href="#reels">短影音</a>
+        <a href="#stories">限動</a>
+        <a href="#reply">回覆</a>
+        <a href="#ads">廣告</a>
+        <a href="#rules">避雷</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-inner">
+      <div>
+        <span class="eyebrow">小編文案包｜可直接複製使用</span>
+        <h1>把「同物件前後對比」講清楚。</h1>
+        <p class="lead">這份網頁給水宅研居星澄店日常社群使用。主軸不神化鍍膜，而是用真實案例說明：鍍膜不是永遠不用清潔，是延緩水垢堆疊，讓後續維護更簡單。</p>
+        <div class="hero-actions">
+          <a class="button" href="#posts">拿貼文</a>
+          <a class="button secondary" href="#reels">拿短影音腳本</a>
+          <a class="button light" href="#rules">看禁用說法</a>
+        </div>
+      </div>
+      <figure class="hero-media" aria-label="水龍頭同物件清潔前與鍍膜後對比">
+        <img src="assets/faucet-before-after.jpg" alt="同一支水龍頭清潔前與鍍膜後對比">
+      </figure>
+    </div>
+  </div>
+
+  <main class="main">
+    <section id="position">
+      <div class="section-head">
+        <h2>品牌定位</h2>
+        <p>小編發文要維持專業、保守、可信。不要把鍍膜講成神奇魔法，要讓客戶理解「先評估、適合才施作、後續比較好維護」。</p>
+      </div>
+      <div class="grid">
+        <article class="block ok">
+          <span class="tag teal">一句話定位</span>
+          <h3>入住前的浴室與廚房鍍膜評估</h3>
+          <p>服務重點不是把所有狀況都硬做，而是判斷物件是否適合，協助客戶在入住前降低後續水垢維護壓力。</p>
+        </article>
+        <article class="block">
+          <span class="tag gold">主要客群</span>
+          <h3>新屋、交屋、裝潢後入住前</h3>
+          <p>年齡約 30-55 歲，女性預約居多，重視居家品質、清潔效率、美觀與收納感。心態偏預防，不想入住後才被水垢困住。</p>
+        </article>
+        <article class="block">
+          <span class="tag blue">次要客群</span>
+          <h3>已入住且維護困難的客戶</h3>
+          <p>玻璃與五金物件狀態以 5 年內為評估上限。重垢需先看照片或現場，不能承諾每個案例都能施作。</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>素材使用方向</h2>
+        <p>優先使用同一物件前後對比，讓觀眾在 3 秒內看懂差異。施工畫面只當輔助，不當主軸。</p>
+      </div>
+      <div class="visual-grid">
+        <article class="visual">
+          <img src="assets/faucet-before-after.jpg" alt="水龍頭前後對比">
+          <strong>水龍頭</strong>
+          <span>適合主打「同物件前後對比」</span>
+        </article>
+        <article class="visual">
+          <img src="assets/glass-before-after.jpg" alt="玻璃前後對比">
+          <strong>玻璃</strong>
+          <span>適合主打「視覺清透與反光」</span>
+        </article>
+        <article class="visual">
+          <img src="assets/stove-before-after.jpg" alt="爐台前後對比">
+          <strong>爐台</strong>
+          <span>適合主打「廚房也能評估」</span>
+        </article>
+        <article class="visual">
+          <img src="assets/shower-before-after.jpg" alt="五金前後對比">
+          <strong>五金</strong>
+          <span>適合主打「水斑延緩堆疊」</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="posts">
+      <div class="section-head">
+        <h2>貼文文案</h2>
+        <p>每篇都保留「不誇大」原則。小編可依素材替換第一句，照片建議用同物件前後對比。</p>
+      </div>
+      <div class="grid two">
+        <article class="block copy">
+          <span class="tag teal">案例貼文 01</span>
+          <h3>同一支水龍頭前後對比</h3>
+          <pre>同一支水龍頭，清潔前後差異看得出來。
+
+水垢不是一天形成的，通常是每天用水、乾掉、再堆疊，慢慢讓五金失去原本的亮度。
+
+鍍膜不是讓你永遠不用清潔，而是讓水垢堆疊速度變慢，後續清潔也比較省力。
+
+日常維護方式很簡單：
+洗碗精加清水，約 3-4 週整理一次即可。
+
+新屋、交屋、入住前，建議先傳照片評估。</pre>
+          <button type="button" data-copy>複製文案</button>
+        </article>
+
+        <article class="block copy">
+          <span class="tag blue">案例貼文 02</span>
+          <h3>玻璃清透感</h3>
+          <pre>浴室玻璃最怕的不是髒一下，而是水痕越疊越厚。
+
+很多人一開始用菜瓜布刷、買水垢清潔劑、試偏方，最後發現玻璃還是霧霧的，甚至多了刮痕。
+
+我們會先看玻璃狀況。
+如果評估適合，才會安排清潔與鍍膜。
+
+鍍膜後還是需要保養，但清潔方式會簡單很多：
+洗碗精加清水，定期擦拭即可。
+
+不是每個重垢案例都能做，先評估比較負責。</pre>
+          <button type="button" data-copy>複製文案</button>
+        </article>
+
+        <article class="block copy">
+          <span class="tag gold">案例貼文 03</span>
+          <h3>廚房爐台也能評估</h3>
+          <pre>鍍膜不只看浴室。
+
+廚房檯面、爐台、水槽、五金，只要材質與狀況適合，也可以一起評估。
+
+對新屋客戶來說，最好的時間點通常是：
+裝潢完成 → 細清完成 → 鍍膜 → 入住使用。
+
+先把容易卡水垢、油膜、皂垢的位置處理好，入住後維護會輕鬆很多。
+
+想知道家裡哪些地方適合？
+可以先傳照片，我們會協助初步判斷。</pre>
+          <button type="button" data-copy>複製文案</button>
+        </article>
+
+        <article class="block copy">
+          <span class="tag coral">觀念貼文 04</span>
+          <h3>鍍膜不是魔法</h3>
+          <pre>鍍膜不是魔法，也不是做完就永遠不用清潔。
+
+比較像汽車鍍膜：
+做完之後車還是要洗，只是表面比較好整理，也能延緩髒污堆疊。
+
+浴室、廚房鍍膜也是一樣。
+重點不是「完全不用清潔」，而是讓後續維護變簡單。
+
+我們會誠實評估物件狀況。
+不適合的案例，不會為了成交硬做。</pre>
+          <button type="button" data-copy>複製文案</button>
+        </article>
+
+        <article class="block copy">
+          <span class="tag teal">新屋貼文 05</span>
+          <h3>入住前先規劃</h3>
+          <pre>新屋交屋時，浴室和廚房看起來都很新。
+
+但真正麻煩的，通常是入住後才開始：
+玻璃水垢、五金霧化、縫隙發霉、檯面卡痕跡。
+
+如果你在意居家品質、清潔效率和整體美觀，建議在入住前就先評估鍍膜。
+
+流程建議：
+裝潢完成 → 細清 → 鍍膜 → 入住。
+
+越早規劃，後續維護越省力。</pre>
+          <button type="button" data-copy>複製文案</button>
+        </article>
+
+        <article class="block copy">
+          <span class="tag blue">評估貼文 06</span>
+          <h3>為什麼我們不硬做</h3>
+          <pre>我們提供保固，就代表施工前必須先判斷效果與持久性。
+
+如果物件狀況已經不適合，硬做只會讓客戶期待落差更大。
+
+所以我們會先看：
+使用年限、材質狀況、水垢程度、是否有刮痕、是否為溫泉水源。
+
+適合才施作。
+不適合也會直接說明。
+
+這不是少接一單，而是對保固和效果負責。</pre>
+          <button type="button" data-copy>複製文案</button>
+        </article>
+
+        <article class="block copy">
+          <span class="tag gold">服務貼文 07</span>
+          <h3>衛浴防霉縫隙</h3>
+          <pre>除了鍍膜，我們也有衛浴防霉縫隙服務。
+
+但這項服務只限新屋施作。
+
+原因很簡單：
+縫隙一旦已經受潮、發霉或被清潔劑反覆侵蝕，後續效果就很難穩定。
+
+新屋階段先處理，才能把預防效果做到比較完整。
+
+如果你是預售屋交屋、新成屋、裝潢後準備入住，可以一起詢問評估。</pre>
+          <button type="button" data-copy>複製文案</button>
+        </article>
+
+        <article class="block copy">
+          <span class="tag coral">重垢貼文 08</span>
+          <h3>已入住客戶怎麼判斷</h3>
+          <pre>如果已經入住一段時間，玻璃或五金開始有明顯水垢，可以先不要急著亂刷。
+
+很多刮痕不是水垢造成的，是後來用菜瓜布、強酸、偏方反覆處理留下的。
+
+已入住物件我們也能評估，但會看狀況。
+大多數可接受年限約 3 年內，極限約 5 年內，重垢需個別判斷。
+
+先傳照片，比現場硬做更安全。</pre>
+          <button type="button" data-copy>複製文案</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="reels">
+      <div class="section-head">
+        <h2>短影音腳本</h2>
+        <p>短影音要像「案例證據」，不要像投影片。每支都先讓觀眾看到前後差異，再補觀念與 CTA。</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>主題</th>
+              <th>秒數</th>
+              <th>畫面</th>
+              <th>字幕</th>
+              <th>旁白</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>同物件前後對比</td>
+              <td>0-3</td>
+              <td>水龍頭前後對比滿版</td>
+              <td>同一物件，不是換新</td>
+              <td>先看同一支水龍頭的清潔前後差異。</td>
+            </tr>
+            <tr>
+              <td>清潔前</td>
+              <td>3-7</td>
+              <td>清潔前局部放大</td>
+              <td>水痕、霧感、堆疊感</td>
+              <td>水垢不是一天形成，是每天用水後慢慢堆起來。</td>
+            </tr>
+            <tr>
+              <td>鍍膜後</td>
+              <td>7-12</td>
+              <td>鍍膜後局部放大</td>
+              <td>表面恢復清透感</td>
+              <td>鍍膜後不是不用清潔，而是後續更好整理。</td>
+            </tr>
+            <tr>
+              <td>案例切換</td>
+              <td>12-22</td>
+              <td>玻璃、爐台、五金前後對比</td>
+              <td>浴室、廚房都能評估</td>
+              <td>不只浴室玻璃，水槽、五金、廚房檯面也能看狀況評估。</td>
+            </tr>
+            <tr>
+              <td>專業評估</td>
+              <td>22-29</td>
+              <td>施工或現場評估畫面</td>
+              <td>適合才施作</td>
+              <td>我們提供保固，所以不適合的物件不會硬做。</td>
+            </tr>
+            <tr>
+              <td>CTA</td>
+              <td>29-35</td>
+              <td>完成照或品牌牌卡</td>
+              <td>新屋・交屋・入住前，先傳照片評估</td>
+              <td>清潔約三到四週一次，用洗碗精加清水就能簡單維護。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="grid two" style="margin-top:16px">
+        <article class="block copy">
+          <span class="tag teal">15 秒短版</span>
+          <h3>同物件對比快剪</h3>
+          <pre>0-2 秒：同一物件前後對比
+字幕：不是換新，是清潔前後差異
+
+2-6 秒：清潔前局部
+字幕：水垢會慢慢堆疊
+
+6-10 秒：鍍膜後局部
+字幕：後續清潔更簡單
+
+10-15 秒：完成照＋CTA
+字幕：新屋、交屋、入住前，先傳照片評估</pre>
+          <button type="button" data-copy>複製腳本</button>
+        </article>
+
+        <article class="block copy">
+          <span class="tag gold">30 秒觀念版</span>
+          <h3>鍍膜不是免清潔</h3>
+          <pre>開頭：很多人以為鍍膜後就不用清潔。
+
+中段：其實不是。就像汽車鍍膜後還是要洗車，浴室和廚房鍍膜也是一樣。
+
+重點：它的價值是延緩水垢堆疊，讓清潔方式更簡單。
+
+保養：洗碗精加清水，約 3-4 週整理一次。
+
+結尾：先傳照片評估，適合才施作。</pre>
+          <button type="button" data-copy>複製腳本</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="stories">
+      <div class="section-head">
+        <h2>限動模板</h2>
+        <p>限動適合做互動與教育，不要每則都硬銷售。建議穿插投票、問答、案例前後對比。</p>
+      </div>
+      <div class="grid four">
+        <article class="block copy">
+          <span class="tag teal">投票</span>
+          <pre>你家浴室玻璃最困擾的是？
+A 水痕霧霧的
+B 五金卡水垢
+C 縫隙發霉
+D 清潔太麻煩</pre>
+          <button type="button" data-copy>複製</button>
+        </article>
+        <article class="block copy">
+          <span class="tag coral">問答</span>
+          <pre>鍍膜後是不是永遠不用清潔？
+答案：不是。
+但清潔方式會簡單很多。</pre>
+          <button type="button" data-copy>複製</button>
+        </article>
+        <article class="block copy">
+          <span class="tag blue">案例</span>
+          <pre>同一物件前後對比
+左：清潔前
+右：鍍膜後
+差異看反光最明顯。</pre>
+          <button type="button" data-copy>複製</button>
+        </article>
+        <article class="block copy">
+          <span class="tag gold">CTA</span>
+          <pre>準備交屋或入住？
+先傳浴室、廚房照片
+我們幫你看哪些地方適合評估。</pre>
+          <button type="button" data-copy>複製</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="reply">
+      <div class="section-head">
+        <h2>留言與私訊回覆</h2>
+        <p>回覆要先篩選物件狀態，不要一開始就報價或保證效果。</p>
+      </div>
+      <div class="grid two">
+        <article class="block copy">
+          <span class="tag teal">詢問價格</span>
+          <pre>您好，價格會依施作範圍、材質與物件狀況評估。
+
+可以先傳浴室玻璃、五金、水槽或廚房檯面的照片給我們，我們會先協助初步判斷是否適合施作，再提供建議。</pre>
+          <button type="button" data-copy>複製回覆</button>
+        </article>
+        <article class="block copy">
+          <span class="tag blue">問能不能做重垢</span>
+          <pre>您好，重垢需要先看狀況，不會每個案例都直接施作。
+
+一般會看使用年限、水垢厚度、是否已經刮傷、材質狀況。您可以先傳照片，我們會先幫您評估。</pre>
+          <button type="button" data-copy>複製回覆</button>
+        </article>
+        <article class="block copy">
+          <span class="tag coral">問溫泉水源</span>
+          <pre>您好，溫泉水源我們目前不施作。
+
+因為水質條件會影響後續效果與穩定性，我們不希望為了成交而讓您對效果有錯誤期待。</pre>
+          <button type="button" data-copy>複製回覆</button>
+        </article>
+        <article class="block copy">
+          <span class="tag gold">問保固</span>
+          <pre>您好，目前親水性的懶人清透鍍膜保固 1.5 年，疏水性易潔鍍膜保固 3 年。
+
+實際仍需依材質、使用狀況與評估結果確認。</pre>
+          <button type="button" data-copy>複製回覆</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="ads">
+      <div class="section-head">
+        <h2>廣告文案</h2>
+        <p>廣告主軸建議分成新屋預防、同物件前後對比、清潔效率三組測試。</p>
+      </div>
+      <div class="grid">
+        <article class="block copy">
+          <span class="tag teal">新屋預防</span>
+          <h3>版本 A</h3>
+          <pre>新屋交屋後，別等水垢堆起來才處理。
+
+浴室玻璃、五金、水槽、廚房檯面，都可以在入住前先評估鍍膜。
+
+鍍膜不是永遠不用清潔，而是延緩水垢堆疊，讓後續維護更簡單。
+
+新屋、交屋、入住前，先傳照片評估。</pre>
+          <button type="button" data-copy>複製廣告</button>
+        </article>
+        <article class="block copy">
+          <span class="tag blue">前後對比</span>
+          <h3>版本 B</h3>
+          <pre>同一物件清潔前後對比，看得出差異。
+
+我們不把鍍膜說成魔法，也不承諾永遠不用清潔。
+
+真正的價值是讓表面更好維護，延緩水垢再次堆疊。
+
+適合才施作，不適合也會直接說。</pre>
+          <button type="button" data-copy>複製廣告</button>
+        </article>
+        <article class="block copy">
+          <span class="tag gold">清潔效率</span>
+          <h3>版本 C</h3>
+          <pre>你是不是也買過很多水垢清潔劑，卻還是越刷越累？
+
+鍍膜後不是不用清潔，而是讓清潔方式變簡單。
+
+洗碗精加清水，約 3-4 週整理一次。
+
+浴室、廚房物件先傳照片，我們協助評估。</pre>
+          <button type="button" data-copy>複製廣告</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="calendar">
+      <div class="section-head">
+        <h2>兩週發文安排</h2>
+        <p>每週至少 2 則案例、1 則觀念、1 則互動。素材不足時，優先把同一組前後對比拆成貼文、短影音、限動三種格式。</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>天數</th>
+              <th>格式</th>
+              <th>主題</th>
+              <th>素材</th>
+              <th>目的</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>D1</td><td>Reels</td><td>同一支水龍頭前後對比</td><td>水龍頭對比圖</td><td>建立信任</td></tr>
+            <tr><td>D2</td><td>限動</td><td>你家最困擾哪種水垢？</td><td>投票</td><td>蒐集痛點</td></tr>
+            <tr><td>D3</td><td>貼文</td><td>鍍膜不是永遠不用清潔</td><td>案例圖</td><td>教育市場</td></tr>
+            <tr><td>D5</td><td>Reels</td><td>玻璃清潔前後</td><td>玻璃對比圖</td><td>展示差異</td></tr>
+            <tr><td>D7</td><td>貼文</td><td>新屋入住前流程</td><td>浴室完成照</td><td>引導預約</td></tr>
+            <tr><td>D9</td><td>Reels</td><td>廚房爐台也能評估</td><td>爐台對比圖</td><td>擴大服務認知</td></tr>
+            <tr><td>D11</td><td>貼文</td><td>為什麼不適合不硬做</td><td>施工畫面</td><td>強化專業感</td></tr>
+            <tr><td>D14</td><td>限動</td><td>交屋前照片健檢</td><td>問答框</td><td>導私訊</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="rules">
+      <div class="section-head">
+        <h2>禁用與改寫</h2>
+        <p>水宅研居星澄店的文案要避免過度神化。以下是小編發文前必看檢查表。</p>
+      </div>
+      <div class="grid two">
+        <article class="block warning">
+          <span class="tag coral">不要這樣說</span>
+          <ul>
+            <li>鍍膜後永遠不用清潔。</li>
+            <li>所有水垢都能處理到像新的一樣。</li>
+            <li>任何物件都能做，不用評估。</li>
+            <li>重垢一定有效。</li>
+            <li>溫泉水源也可以施作。</li>
+          </ul>
+        </article>
+        <article class="block ok">
+          <span class="tag teal">改成這樣說</span>
+          <ul>
+            <li>鍍膜能延緩水垢堆疊，讓後續維護更簡單。</li>
+            <li>日常用洗碗精加清水，約 3-4 週整理一次。</li>
+            <li>新屋、交屋、入住前建議先評估。</li>
+            <li>重垢需看物件狀況，不適合不硬做。</li>
+            <li>溫泉水源目前不施作。</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>水宅研居星澄店小編文案包。最後更新：2026-06-17。文案可依實際施工照片與現場評估結果微調。</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll("[data-copy]").forEach((button) => {
+      button.addEventListener("click", async () => {
+        const text = button.parentElement.querySelector("pre").innerText.trim();
+        await navigator.clipboard.writeText(text);
+        button.classList.add("copied");
+        button.textContent = "已複製";
+        window.setTimeout(() => {
+          button.classList.remove("copied");
+          button.textContent = button.dataset.original || "複製文案";
+        }, 1400);
+      });
+      button.dataset.original = button.textContent;
+    });
+  </script>
+</body>
+</html>
